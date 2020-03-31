@@ -1,0 +1,109 @@
+{
+  "name": "hello-world-app1",
+  "version": "1.0.0",
+  "author": "Nexient, LLC",
+  "description": "Where is My Order Tracker is an interactive user interface displaying current status information for orders submitted by customers requesting service be turned on (started), turned off (stopped) or transferred between premises.",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-hot-loader": "^4.12.20"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^24.9.1",
+    "@types/mocha": "^5.2.7",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "css-loader": "^1.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "file-loader": "^4.3.0",
+    "html-loader": "^0.5.5",
+    "husky": "^4.2.3",
+    "image-webpack-loader": "^6.0.0",
+    "jest": "^24.9.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.13.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "svg-url-loader": "^3.0.3",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.8.3",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "app/**/*.{js,jsx}": [
+      "npm run lint:js:fix",
+      "git add --force"
+    ],
+    "app/**/*.json": [
+      "prettier --write",
+      "git add --force"
+    ],
+    "app/**/*.less": [
+      "npm run lint:style:fix",
+      "git add --force"
+    ],
+    "app/**/*.{ts,tsx}": [
+      "npm run lint:tslint",
+      "git add --force"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmiller-nexient/wismo"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run bundle",
+    "build:dev": "npm run lint && npm run bundle:dev",
+    "bundle": "webpack --mode production --color -p --progress --hide-modules --display-optimization-bailout",
+    "bundle:dev": "webpack --mode development --color -p --progress --hide-modules --display-optimization-bailout",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:style && npm run lint:ts",
+    "lint:css": "stylelint './app/**/*.js'",
+    "lint:fix": "npm run lint:js:fix",
+    "lint:js": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts -- . ",
+    "lint:js:fix": "eslint --fix --ignore-path .gitignore .",
+    "lint:style": "stylelint '{app}/**/*.less' --syntax less",
+    "lint:ts": "npm run lint:tslint",
+    "lint:tslint": "tslint --config ./tslint.json --project ./tsconfig.json",
+    "prettify": "prettier --write",
+    "start:dev": "webpack-dev-server --config ./webpack.dev.js",
+    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test:update": "cross-env NODE_ENV=test jest --coverage --updateSnapshot",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll"
+  }
+}

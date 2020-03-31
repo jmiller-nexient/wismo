@@ -1,0 +1,159 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/*.js"
+    ]
+  },
+  "rules": {
+    "align": [true, "statements"],
+    "arrow-parens": [false],
+    "arrow-return-shorthand": true,
+    "callable-types": true,
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "deprecation": {
+      "severity": "warn"
+    },
+    "eofline": true,
+    "forin": true,
+    "import-blacklist": [
+      true,
+      "rxjs",
+      "rxjs/Rx"
+    ],
+    "import-spacing": true,
+    "indent": [true, "spaces"],
+    "interface-name": false,
+    "interface-over-type-literal": true,
+    "jsdoc-format": true,
+    "jsx-alignment": false,
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "label-position": true,
+    "max-line-length": [true, 160],
+    "max-file-line-count": [true, 800],
+    "member-access": false,
+    "member-ordering": [false],
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-any": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": [true, 1],
+    "no-console": [false],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-default-export": false,
+    "no-duplicate-super": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-implicit-dependencies": false,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-internal-module": true,
+    "no-invalid-this": true,
+    "no-mergeable-namespace": true,
+    "no-misused-new": true,
+    "no-namespace": true,
+    "no-non-null-assertion": true,
+    "no-null-keyword": false,
+    "no-parameter-properties": true,
+    "no-reference": true,
+    "no-require-imports": false,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-submodule-imports": false,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": true,
+    "no-unused-variable": [false, "react"],
+    "no-var-keyword": true,
+    "no-var-requires": false,
+    "object-literal-shorthand": [true, "never"],
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-catch",
+      "check-else",
+      "check-finally",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "one-variable-per-declaration": [true],
+    "ordered-imports": false,
+    "prefer-const": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "radix": true,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "switch-default": true,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef": [
+      true,
+      "arrow-parameter",
+      "member-variable-declaration",
+      "parameter",
+      "property-declaration",
+      "variable-declaration"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ]
+  },
+  "use-host-property-decorator": true,
+  "use-input-property-decorator": true,
+  "use-isnan": true,
+  "use-life-cycle-interface": true,
+  "use-output-property-decorator": true,
+  "use-pipe-transform-interface": true,
+  "unified-signatures": true,
+  "variable-name": [
+    true,
+    "allow-leading-underscore",
+    "ban-keywords",
+    "check-format"
+  ],
+  "whitespace": [
+    true,
+    "check-branch",
+    "check-decl",
+    "check-module",
+    "check-operator",
+    "check-separator",
+    "check-type",
+    "check-typecast"
+  ]
+}

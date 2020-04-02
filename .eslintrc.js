@@ -1,31 +1,46 @@
+const fs = require('fs');
+const path = require('path');
+
+const prettierOptions = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
+);
+
 module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
     node: true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'prettier',
+    'prettier/react',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 6,
     sourceType: 'module',
   },
   plugins: [
+    'prettier',
     'react',
   ],
   rules: {
+    'array-bracket-newline': ['error', 'consistent'],
+    'array-element-newline': ['error', 'consistent'],
     'arrow-body-style': [2, 'as-needed'],
     'class-methods-use-this': 0,
     'comma-dangle': [2, 'always-multiline'],
+    'import/extensions': ['warn', 'never'],
     'import/imports-first': 0,
     'import/newline-after-import': 0,
     'import/no-dynamic-require': 0,
@@ -48,6 +63,7 @@ module.exports = {
     'no-unused-vars': 2,
     'no-use-before-define': 0,
     'prefer-template': 2,
+    'prettier/prettier': ['error', prettierOptions],
     'react/destructuring-assignment': 0,
     'react/jsx-closing-tag-location': 0,
     'react/forbid-prop-types': 0,
@@ -60,5 +76,12 @@ module.exports = {
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
     'require-yield': 0,
+  },
+  settings: {
+    'import/resolver': {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
   },
 };

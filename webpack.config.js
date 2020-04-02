@@ -2,16 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './app/index.tsx',
+  entry: './index.tsx',
   mode: 'production',
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(eot|otf|ttf|woff|woff2)$/,
@@ -60,9 +57,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         options: {
-          presets: [
-            '@babel/env',
-          ],
+          presets: ['@babel/env'],
         },
       },
       {
@@ -127,16 +122,9 @@ module.exports = {
     path: path.resolve(__dirname, 'build/'),
     publicPath: '/build/',
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   resolve: {
-    extensions: [
-      '*',
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx',
-    ],
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    modules: ['node_modules', 'app'],
   },
 };

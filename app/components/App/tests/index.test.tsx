@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import renderer from 'react-test-renderer';
 
-import App from '../App';
+import App from '..';
 
 describe('<App />', () => {
   it('should render correctly', () => {

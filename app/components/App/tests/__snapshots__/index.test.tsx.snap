@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render correctly 1`] = `
+<div>
+  <div
+    className="dte-home"
+  >
+    <h1>
+      Hello, WISMO!
+    </h1>
+  </div>
+</div>
+`;

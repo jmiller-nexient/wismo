@@ -86,7 +86,6 @@
     "no-unused-variable": [false, "react"],
     "no-var-keyword": true,
     "no-var-requires": false,
-    "object-literal-shorthand": [true, "never"],
     "object-literal-sort-keys": false,
     "one-line": [
       true,
@@ -107,14 +106,17 @@
       true,
       "allow-null-check"
     ],
-    "typedef": [
-      true,
-      "arrow-parameter",
-      "member-variable-declaration",
-      "parameter",
-      "property-declaration",
-      "variable-declaration"
-    ],
+    "typedef": {
+      "severity": "warn",
+      "options": [
+        "arrow-call-signature",
+        "arrow-parameter",
+        "call-signature",
+        "member-variable-declaration",
+        "parameter",
+        "property-declaration"
+      ]
+    },
     "typedef-whitespace": [
       true,
       {

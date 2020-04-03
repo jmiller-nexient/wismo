@@ -88,7 +88,6 @@
       "git add --force"
     ]
   },
-  "pre-commit": "lint-staged",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmiller-nexient/wismo"
@@ -104,6 +103,7 @@
     "lint:js": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts -- . ",
     "lint:js:fix": "eslint --fix --ignore-path .gitignore .",
     "lint:style": "stylelint app/**/*.less --syntax less",
+    "lint:style:fix": "stylelint app/**/*.less --syntax less --fix",
     "lint:ts": "npm run lint:tslint",
     "lint:tslint": "tslint --config ./tslint.json --project ./tsconfig.json",
     "prettify": "prettier --write",

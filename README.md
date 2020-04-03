@@ -1,6 +1,6 @@
 <img  src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/70706303_10157461057676465_6761746745589235712_n.png?_nc_cat=111&_nc_sid=85a577&_nc_ohc=SWpzNbKEP7QAX98o3Z1&_nc_ht=scontent-ort2-1.xx&oh=bdfffa1017a3073c12e63bd63cd58f03&oe=5EA9612C" align="center" alt="DTE Energy" height="150"/>
 
-**MIMO - WISMO Tracker**
+# MIMO - WISMO Tracker
 Move-In/Move-Out - Where is My Order Tracker is an interactive user interface displaying current status information for orders submitted by customers requesting service be turned on (started), turned off (stopped) or transferred between premises.
 
 Azure DevOps project: [https://dev.azure.com/dteenergy/WISMO](https://dev.azure.com/dteenergy/WISMO)
@@ -86,7 +86,7 @@ This will extract all messages into JSON translation files located in the [app/t
 > the script ensures you don't miss any.
 
 
-### Adding A Language
+### Adding a Language
 You can add a language by running the generate command:
 ```
   npm run generate language

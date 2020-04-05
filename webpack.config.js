@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './index.tsx',
+  entry: path.join(process.cwd(), 'index.tsx'),
   mode: 'production',
   module: {
     rules: [

@@ -4,7 +4,7 @@
   "author": "Nexient, LLC",
   "description": "Where is My Order Tracker is an interactive user interface displaying current status information for orders submitted by customers requesting service be turned on (started), turned off (stopped) or transferred between premises.",
   "license": "ISC",
-  "main": "index.js",
+  "main": "index.tsx",
   "dependencies": {
     "axios": "^0.19.2",
     "react": "^16.13.0",

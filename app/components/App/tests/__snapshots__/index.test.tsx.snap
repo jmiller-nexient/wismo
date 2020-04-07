@@ -8,6 +8,10 @@ exports[`<App /> should render correctly 1`] = `
     <h1>
       Hello, WISMO!
     </h1>
+    <h2>
+      This is the 
+      local instance
+    </h2>
   </div>
 </div>
 `;

@@ -9,7 +9,7 @@ config.devServer = {
   headers: {
     'Access-Control-Allow-Origin': '*',
   },
-  hotOnly: true,
+  hot: true,
   publicPath: 'http://localhost:3000/build',
   port: 3000,
 };

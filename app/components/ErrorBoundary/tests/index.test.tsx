@@ -12,4 +12,12 @@ describe('<ErrorBoundary/>', () => {
     mount(<ErrorBoundary><ProblemComponent/></ErrorBoundary>);
     expect(ErrorBoundary.prototype.componentDidCatch).toHaveBeenCalled();
   });
+  it('should render props.children', () => {
+    const wrapper = mount(
+      <ErrorBoundary>
+        <ProblemComponent/>
+      </ErrorBoundary>
+    );
+    expect(wrapper.find(<ProblemComponent/>));
+  });
 });

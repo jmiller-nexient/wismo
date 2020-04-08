@@ -71,6 +71,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "lint-staged": {
     "app/**/*.{js,jsx}": [
       "npm run lint:js:fix",

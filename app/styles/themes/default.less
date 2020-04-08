@@ -6,8 +6,45 @@
 // The prefix to use on all custom css classes.
 @dte-prefix: dte-wismo;
 
+// Buttons
+.dte-wismo-button-primary {
+  background-color: @dte-interactive;
+  border: 1px solid @dte-interactive;
+  color: @dte-white;
+  font-size: @dte-wismo-font-size-1;
+  padding: 8px 40px;
+  text-align: center;
+
+  &:disabled {
+    background-color: @dte-gray-500;
+  }
+
+  &:hover:enabled {
+    background-color: @dte-interactive-hover;
+  }
+}
+
+.dte-wismo-button-secondary {
+  background-color: @dte-white;
+  border: 1px solid @dte-interactive;
+  color: @dte-interactive;
+  font-size: @dte-wismo-font-size-1;
+  text-align: center;
+
+  &:disabled {
+    background-color: @dte-gray-200;
+    border-color: @dte-gray-400;
+    color: @dte-gray-500;
+  }
+
+  &:hover:enabled {
+    background-color: @dte-interactive-hover;
+    color: @dte-white;
+  }
+}
+
 // Fonts
-@dte-wismo-font-family: Arial, Helvetica, sans-serif;
+@dte-wismo-font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 
 // Font Sizes
 @dte-wismo-font-size-10: 3.247rem; // ~52px
@@ -27,3 +64,71 @@
 @dte-wismo-font-weight-normal: 400;
 @dte-wismo-font-weight-semi-bold: 600;
 @dte-wismo-font-weight-bold: 700;
+
+//
+// HTML Elements
+//
+a {
+  &:link {
+    color: @dte-interactive;
+  }
+
+  &:hover {
+    color: @dte-purple-dark;
+  }
+
+  &:visited {
+    color: @dte-interactive-hover;
+  }
+}
+
+body {
+  color: @dte-content-primary;
+  font-family: @dte-wismo-font-family;
+  font-size: @dte-wismo-font-size-0;
+}
+
+// TODO: Consider getting rid of this when the Button component is added
+//       So use of <button> instead of <Button> will be obvious
+button {
+  background-color: @dte-interactive;
+  border: 1px solid @dte-interactive;
+  color: @dte-white;
+  font-size: @dte-wismo-font-size-1;
+  padding: 8px 40px;
+  text-align: center;
+
+  &:disabled {
+    background-color: @dte-gray-500;
+    cursor: not-allowed;
+  }
+
+  &:hover:enabled {
+    background-color: @dte-interactive-hover;
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: @dte-wismo-font-size-5;
+}
+
+h2 {
+  font-size: @dte-wismo-font-size-4;
+}
+
+h3 {
+  font-size: @dte-wismo-font-size-3;
+}
+
+h4 {
+  font-size: @dte-wismo-font-size-2;
+}
+
+h5 {
+  font-size: @dte-wismo-font-size-1;
+}
+
+h6 {
+  font-size: @dte-wismo-font-size-0;
+}

@@ -12,6 +12,16 @@ exports[`<App /> should render correctly 1`] = `
       This is the 
       local instance
     </h2>
+    <div>
+      <h4>
+        Account Number component:
+      </h4>
+      <span
+        className="dte-wismo-account-number"
+      >
+        9275 309 8675 3
+      </span>
+    </div>
   </div>
 </div>
 `;

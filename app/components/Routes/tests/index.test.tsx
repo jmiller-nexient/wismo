@@ -5,7 +5,7 @@ import Layout from 'components/Layout';
 import NotFoundPage from 'components/NotFoundPage';
 import { MemoryRouter } from 'react-router';
 
-describe('routes using memory router', () => {
+describe('<Routes />', () => {
     it('should show Home component for / router (using memory router)', () => {
         const component = mount(<MemoryRouter initialEntries={['/']} >
             <Routes />

@@ -7,14 +7,14 @@ import Home from 'components/Layout';
 import NotFoundPage from 'components/NotFoundPage';
 
 describe('<Routes />', () => {
-    it('should show Home component for / router (using memory router)', () => {
+    it('Should show <Home /> when path is / route (using memory router)', () => {
         const component = mount(<MemoryRouter initialEntries={['/']} >
             <Routes />
         </MemoryRouter>
         );
         expect(component.find(Home)).toHaveLength(1);
     });
-    it('should show No match component for route not defined', () => {
+    it('Should show <NotFoundPage /> when the path in not found', () => {
         const component = mount(<MemoryRouter initialEntries={['/unknown']} >
             <Routes />
         </MemoryRouter>

@@ -14,7 +14,9 @@ const Routes: React.FC<{}> = () => {
             <Route path="/testpage">
                 <TestPage />
             </Route>
-            <Route component={NotFoundPage} />
+            <Route>
+                <NotFoundPage />
+            </Route>
         </Switch>
     );
 };

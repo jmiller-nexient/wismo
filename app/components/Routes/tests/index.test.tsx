@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import { MemoryRouter } from 'react-router';
 
 import Routes from '..';
-import Layout from 'components/Layout';
+import Home from 'components/Layout';
 import NotFoundPage from 'components/NotFoundPage';
 
 describe('<Routes />', () => {
@@ -12,7 +12,7 @@ describe('<Routes />', () => {
             <Routes />
         </MemoryRouter>
         );
-        expect(component.find(Layout)).toHaveLength(1);
+        expect(component.find(Home)).toHaveLength(1);
     });
     it('should show No match component for route not defined', () => {
         const component = mount(<MemoryRouter initialEntries={['/unknown']} >

@@ -145,5 +145,6 @@ tbd
 
 ## See Also
 
+ - [Firebase](./docs/firebase.md)
  - https://github.com/yahoo/react-intl/wiki
  - https://ant.design/components

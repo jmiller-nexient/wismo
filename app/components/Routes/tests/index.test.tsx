@@ -1,9 +1,10 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { MemoryRouter } from 'react-router';
+
 import Routes from '..';
 import Layout from 'components/Layout';
 import NotFoundPage from 'components/NotFoundPage';
-import { MemoryRouter } from 'react-router';
 
 describe('<Routes />', () => {
     it('should show Home component for / router (using memory router)', () => {

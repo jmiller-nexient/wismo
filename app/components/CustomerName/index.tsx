@@ -12,7 +12,7 @@ const CustomerName: React.FC<ICustomerNameProps> = (props: ICustomerNameProps) =
 
   return (
     <span className="dte-wismo-customer-name">
-      {firstName} {lastName}
+      {`${firstName} ${lastName}`}
     </span>
   );
 };

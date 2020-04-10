@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountNumber /> should render correctly in case of 7 characters 1`] = `
+<span
+  className="dte-wismo-phone-number"
+>
+  112-2334
+</span>
+`;
+
+exports[`<AccountNumber /> should render correctly in case of 10 characters 1`] = `
+<span
+  className="dte-wismo-phone-number"
+>
+  (112) 233-4455
+</span>
+`;

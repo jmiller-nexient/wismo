@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import PhoneNumber from '..';
 import {shallow} from 'enzyme';
 
-describe('<AccountNumber />', () => {
+describe('<PhoneNumber />', () => {
   it('should render correctly in case of 10 characters', () => {
     const tree: ReactElement = renderer.create(
       <PhoneNumber value={'1122334455'} />,

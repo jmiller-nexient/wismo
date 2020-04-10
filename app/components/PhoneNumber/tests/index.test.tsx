@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import renderer from 'react-test-renderer';
 
 import PhoneNumber from '..';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('<PhoneNumber />', () => {
   it('should render correctly when phone number has 10 characters', () => {
@@ -22,10 +22,14 @@ describe('<PhoneNumber />', () => {
   });
 
   it('should throw an error when phone number is not 10 or 7 characters', () => {
-    expect(() => shallow(<PhoneNumber value={'123456'}/>)).toThrowError();
+    expect(() => shallow(<PhoneNumber value={'123456'} />)).toThrowError();
   });
 
   it('should throw an error when phone number is more than 10 characters', () => {
-    expect(() => shallow(<PhoneNumber value={'12345678910'}/>)).toThrowError();
+    expect(() => shallow(<PhoneNumber value={'12345678910'} />)).toThrowError();
+  });
+
+  it('should throw an error when phone number is more than 7 but less than 10 characters', () => {
+    expect(() => shallow(<PhoneNumber value={'12345678'} />)).toThrowError();
   });
 });

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address Component should not render line 2 when null 1`] = `
+<address
+  className="dte-wismo-address"
+>
+  123 Main St
+  <br />
+  Bloomfield, MI 48301
+</address>
+`;
+
+exports[`Address Component should render line2 when it has a value 1`] = `
+<address
+  className="dte-wismo-address"
+>
+  123 Main St, Apt. 213
+  <br />
+  Bloomfield, MI 48301
+</address>
+`;

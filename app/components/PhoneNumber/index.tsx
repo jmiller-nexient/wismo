@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import formatPhoneNumber from './formatPhoneNumber';
-import './index.less';
+import '../../styles/themes/index.less';
 
 interface IPhoneNumberProps {
   value: string;

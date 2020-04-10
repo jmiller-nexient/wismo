@@ -14,7 +14,7 @@ const Home: React.FC = () => (
       <h4>Account Number component:</h4>
       <AccountNumber value={'927530986753'}/>
       <h4>Customer Name component:</h4>
-      <CustomerName value={'Adam Charles Naglich'}/>
+      <CustomerName firstName={'Adam'} lastName={'Naglich'}/>
     </div>
   </div>
 );

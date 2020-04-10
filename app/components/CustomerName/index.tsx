@@ -3,15 +3,16 @@ import * as React from 'react';
 import './index.less';
 
 interface ICustomerNameProps {
-  value: string;
+  firstName: string;
+  lastName: string;
 }
 
 const CustomerName: React.FC<ICustomerNameProps> = (props: ICustomerNameProps) => {
-  const { value } = props;
+  const { firstName, lastName } = props;
 
   return (
     <span className="dte-wismo-customer-name">
-      {value}
+      {firstName} {lastName}
     </span>
   );
 };

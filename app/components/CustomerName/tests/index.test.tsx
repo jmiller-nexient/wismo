@@ -6,7 +6,7 @@ import CustomerName from '..';
 describe('<AccountNumber />', () => {
   it('should render correctly', () => {
     const tree: ReactElement = renderer.create(
-      <CustomerName value={'Test test test'} />,
+      <CustomerName firstName="Test" lastName="Test" />,
     ).toJSON();
 
     expect(tree).toMatchSnapshot();

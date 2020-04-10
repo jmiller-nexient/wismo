@@ -27,7 +27,9 @@ exports[`<App /> should render correctly 1`] = `
       <span
         className="dte-wismo-customer-name"
       >
-        Adam Charles Naglich
+        Adam
+         
+        Naglich
       </span>
     </div>
   </div>

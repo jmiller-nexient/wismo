@@ -21,6 +21,14 @@ exports[`<App /> should render correctly 1`] = `
       >
         9275 309 8675 3
       </span>
+      <h4>
+        Customer Name component:
+      </h4>
+      <span
+        className="dte-wismo-customer-name"
+      >
+        Adam Charles Naglich
+      </span>
     </div>
   </div>
 </div>

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountNumber /> should render correctly 1`] = `
+<span
+  className="dte-wismo-customer-name"
+>
+  Test test test
+</span>
+`;

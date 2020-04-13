@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render correctly when it is primary 1`] = `
+<button
+  className="dte-wismo-button dte-wismo-button-primary"
+/>
+`;
+
+exports[`<Button /> should render correctly when it is secondary 1`] = `
+<button
+  className="dte-wismo-button dte-wismo-button-secondary"
+/>
+`;
+
+exports[`<Button /> should render correctly when it is primary and disabled 1`] = `
+<button
+  className="dte-wismo-button dte-wismo-button-primary"
+  disabled={true}
+/>
+`;
+
+exports[`<Button /> should render correctly when it is secondary and disabled 1`] = `
+<button
+  className="dte-wismo-button dte-wismo-button-secondary"
+  disabled={true}
+/>
+`;

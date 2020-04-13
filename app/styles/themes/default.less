@@ -7,39 +7,36 @@
 @dte-prefix: dte-wismo;
 
 // Buttons
-.dte-wismo-button-primary {
-  background-color: @dte-interactive;
+.dte-wismo-button {
   border: 1px solid @dte-interactive;
-  color: @dte-white;
   font-size: @dte-wismo-font-size-1;
   padding: 8px 40px;
   text-align: center;
 
-  &:disabled {
-    background-color: @dte-gray-500;
-  }
-
   &:hover:enabled {
     background-color: @dte-interactive-hover;
+    color: @dte-white;
+  }
+}
+
+.dte-wismo-button-primary {
+  background-color: @dte-interactive;
+  color: @dte-white;
+
+  &:disabled {
+    background-color: @dte-gray-500;
+    border-color: @dte-gray-500;
   }
 }
 
 .dte-wismo-button-secondary {
   background-color: @dte-white;
-  border: 1px solid @dte-interactive;
   color: @dte-interactive;
-  font-size: @dte-wismo-font-size-1;
-  text-align: center;
 
   &:disabled {
     background-color: @dte-gray-200;
     border-color: @dte-gray-400;
     color: @dte-gray-500;
-  }
-
-  &:hover:enabled {
-    background-color: @dte-interactive-hover;
-    color: @dte-white;
   }
 }
 
@@ -89,6 +86,7 @@ body {
   color: @dte-content-primary;
   font-family: @dte-wismo-font-family;
   font-size: @dte-wismo-font-size-0;
+  font-style: @dte-wismo-font-style-normal;
 }
 
 // TODO: Consider getting rid of this when the Button component is added
@@ -103,6 +101,7 @@ button {
 
   &:disabled {
     background-color: @dte-gray-500;
+    border-color: @dte-gray-500;
     cursor: not-allowed;
   }
 

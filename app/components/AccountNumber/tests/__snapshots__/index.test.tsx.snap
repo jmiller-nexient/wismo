@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccountNumber /> should render correctly 1`] = `
-<span
-  className="dte-wismo-account-number"
->
+<span>
   1122 334 4556 6
 </span>
 `;

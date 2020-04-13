@@ -1,13 +1,12 @@
 import * as React from 'react';
 
 import formatAccountNumber from './formatAccountNumber';
-import './index.less';
 
 interface IAccountNumberProps {
   value: string;
 }
 
-const AccountNumber: React.FC<IAccountNumberProps> = (props: IAccountNumberProps) => {
+const AccountNumber: React.FC<IAccountNumberProps> = (props: IAccountNumberProps): React.ReactElement => {
   const { value } = props;
 
   if (value.length !== 12) {
@@ -16,11 +15,7 @@ const AccountNumber: React.FC<IAccountNumberProps> = (props: IAccountNumberProps
 
   const formattedAccountNumber = formatAccountNumber(value);
 
-  return (
-    <span className="dte-wismo-account-number">
-      {formattedAccountNumber}
-    </span>
-  );
+  return <span>{formattedAccountNumber}</span>;
 };
 
 export default AccountNumber;

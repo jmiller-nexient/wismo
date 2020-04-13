@@ -12,6 +12,7 @@ config.devServer = {
   hot: true,
   publicPath: 'http://localhost:3000/build',
   port: 3000,
+  historyApiFallback: true,
 };
 config.mode = 'development';
 config.plugins.push(new webpack.NamedModulesPlugin());

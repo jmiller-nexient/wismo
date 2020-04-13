@@ -5,32 +5,33 @@ import React from 'react';
 
 import './index.less';
 
-type Target = '_blank' | '_parent' | '_self' | '_top';
+import ExternalHyperlink from './ExternalHyperlink';
+import LocalHyperlink from './LocalHyperlink';
+import { IHyperlinkProps } from './types';
 
-interface HyperlinkProps {
-  alt?: string | null;
-  children?: React.ReactNode;
-  href: string;
-  target?: Target;
-}
+const isLocalUrl = (href: string): boolean => {
+  const regex = /(http|https):\/\/.*/;
 
-const Hyperlink: React.FC<HyperlinkProps> = (props: HyperlinkProps): React.ReactElement => {
+  return !regex.test(href);
+};
+
+const Hyperlink: React.FC<IHyperlinkProps> = (props: IHyperlinkProps): React.ReactElement => {
   const { alt, children, href, target } = props;
 
-  const ExternalIcon =
-    href && href.includes(window.location.hostname) ? null : (
-      <img
-        alt={alt || 'external-link'}
-        className="dte-wismo-hyperlink-icon"
-        src={require('images/external-link.svg')}
-      />
+  const isLocal = isLocalUrl(href);
+
+  if (isLocal) {
+    return (
+      <LocalHyperlink href={`${href}`} target={target || '_self'}>
+        {children}
+      </LocalHyperlink>
     );
+  }
 
   return (
-    <a href={`${href}`} target={target || (ExternalIcon ? '_blank' : '_self')}>
-      {ExternalIcon}
-      {React.Children.toArray(children)}
-    </a>
+    <ExternalHyperlink alt={alt} href={`${href}`} target={target || '_blank'}>
+      {children}
+    </ExternalHyperlink>
   );
 };
 

@@ -1,6 +1,9 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { IntlProvider } from 'react-intl';
 import { MemoryRouter } from 'react-router';
+import { mount } from 'enzyme';
+
+import { translationMessages } from 'i18n';
 
 import Home from 'components/Layout';
 import NotFoundPage from 'components/NotFoundPage';
@@ -8,9 +11,11 @@ import Routes from '..';
 
 // tslint:disable-next-line: typedef
 const mountRoutes = (initialEntries: string[]) => mount(
-  <MemoryRouter initialEntries={initialEntries} >
-    <Routes />
-  </MemoryRouter>
+  <IntlProvider locale="en" messages={translationMessages.en}>
+    <MemoryRouter initialEntries={initialEntries} >
+      <Routes />
+    </MemoryRouter>
+  </IntlProvider>
 );
 
 describe('<Routes />', () => {

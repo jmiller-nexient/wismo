@@ -4,7 +4,8 @@ import AccountNumber from 'components/AccountNumber';
 import Button from 'components/Button';
 import CustomerName from 'components/CustomerName';
 import Hyperlink from 'components/Hyperlink';
-import PhoneNumber from '../PhoneNumber';
+import PhoneNumber from 'components/PhoneNumber';
+import SelectLanguage from 'components/SelectLanguage';
 
 const indented = {
   marginLeft: '20px',
@@ -13,6 +14,9 @@ const indented = {
 const TestPage: React.FC = (): React.ReactElement => (
   <div>
     <h1>This is the test\demo page for custom components</h1>
+    <div>
+      <SelectLanguage />
+    </div>
     <div>
       <h4>Account Number component:</h4>
       <div style={indented}>
@@ -44,7 +48,7 @@ const TestPage: React.FC = (): React.ReactElement => (
     <div>
       <h4>Hyperlink component:</h4>
       <div style={indented}>
-        Internal URL: <Hyperlink href="http://localhost:3000">Home</Hyperlink>
+        Internal URL: <Hyperlink href="/">Home</Hyperlink>
         <br />
         External URL: <Hyperlink href="http://www.dteenergy.com">DTE Energy</Hyperlink>
       </div>

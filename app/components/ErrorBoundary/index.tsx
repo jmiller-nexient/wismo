@@ -6,7 +6,7 @@ export class ErrorBoundary extends React.PureComponent<{}> {
   }
 
   public componentDidCatch(error: Error | null, info: object) {
-    console.log(info, error);
+    console.error(info, error);
   }
 
   public render() {

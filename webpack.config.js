@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   // Add hot reloading in development
-  entry: [require.resolve('react-app-polyfill/ie11'), path.join(process.cwd(), 'index.tsx')],
+  entry: [require.resolve('react-app-polyfill/ie11'), path.join(process.cwd(), 'app/index.tsx')],
   mode: 'production',
   module: {
     rules: [

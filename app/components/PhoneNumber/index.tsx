@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import formatPhoneNumber from './formatPhoneNumber';
 
 interface IPhoneNumberProps {

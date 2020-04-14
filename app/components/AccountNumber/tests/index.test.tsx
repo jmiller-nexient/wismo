@@ -1,8 +1,9 @@
 import React, { ReactElement } from 'react';
+
+import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 
 import AccountNumber from '..';
-import {shallow} from 'enzyme';
 
 describe('<AccountNumber />', () => {
   it('should render correctly', () => {

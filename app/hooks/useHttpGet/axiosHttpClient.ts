@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosResponse, AxiosRequestConfig } from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 import { IHttpClient } from './types';
 

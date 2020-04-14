@@ -1,8 +1,9 @@
 import React, { ReactElement } from 'react';
+
+import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
 import PhoneNumber from '..';
-import { shallow } from 'enzyme';
 
 describe('<PhoneNumber />', () => {
   it('should render correctly when phone number has 10 characters', () => {

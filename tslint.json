@@ -1,13 +1,7 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-react",
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
   "linterOptions": {
-    "exclude": [
-      "**/*.js"
-    ]
+    "exclude": ["**/*.js"]
   },
   "rules": {
     "align": [true, "statements"],
@@ -15,21 +9,14 @@
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
-    "comment-format": [
-      true,
-      "check-space"
-    ],
+    "comment-format": [true, "check-space"],
     "curly": true,
     "deprecation": {
       "severity": "warn"
     },
     "eofline": true,
     "forin": true,
-    "import-blacklist": [
-      true,
-      "rxjs",
-      "rxjs/Rx"
-    ],
+    "import-blacklist": [true, "rxjs", "rxjs/Rx"],
     "import-spacing": true,
     "indent": [true, "spaces"],
     "interface-name": false,
@@ -60,10 +47,7 @@
     "no-empty-interface": true,
     "no-eval": true,
     "no-implicit-dependencies": false,
-    "no-inferrable-types": [
-      true,
-      "ignore-params"
-    ],
+    "no-inferrable-types": [true, "ignore-params"],
     "no-internal-module": true,
     "no-invalid-this": true,
     "no-mergeable-namespace": true,
@@ -87,25 +71,15 @@
     "no-var-keyword": true,
     "no-var-requires": false,
     "object-literal-sort-keys": false,
-    "one-line": [
-      true,
-      "check-catch",
-      "check-else",
-      "check-finally",
-      "check-open-brace",
-      "check-whitespace"
-    ],
+    "one-line": [true, "check-catch", "check-else", "check-finally", "check-open-brace", "check-whitespace"],
     "one-variable-per-declaration": [true],
-    "ordered-imports": false,
+    "ordered-imports": true,
     "prefer-const": true,
     "quotemark": [true, "single", "jsx-double"],
     "radix": true,
     "semicolon": [true, "always", "ignore-bound-class-methods"],
     "switch-default": true,
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
+    "triple-equals": [true, "allow-null-check"],
     "typedef": {
       "severity": "warn",
       "options": [
@@ -142,12 +116,7 @@
   "use-output-property-decorator": true,
   "use-pipe-transform-interface": true,
   "unified-signatures": true,
-  "variable-name": [
-    true,
-    "allow-leading-underscore",
-    "ban-keywords",
-    "check-format"
-  ],
+  "variable-name": [true, "allow-leading-underscore", "ban-keywords", "check-format"],
   "whitespace": [
     true,
     "check-branch",

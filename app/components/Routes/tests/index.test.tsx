@@ -1,8 +1,8 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
 import { MemoryRouter } from 'react-router';
-import { mount } from 'enzyme';
 
+import { mount } from 'enzyme';
 import { translationMessages } from 'i18n';
 
 import Home from 'components/Layout';

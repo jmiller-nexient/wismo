@@ -1,6 +1,7 @@
 import React from 'react';
-import '@testing-library/dom';
+
 // import { fireEvent, render, waitFor } from '@testing-library/react';
+import '@testing-library/dom';
 import { render, waitFor } from '@testing-library/react';
 
 import TestComponent from './TestComponent';

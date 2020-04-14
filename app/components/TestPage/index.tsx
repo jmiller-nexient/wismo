@@ -8,8 +8,9 @@ import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ProductList from 'components/ProductList';
 import SelectLanguage from 'components/SelectLanguage';
+import Currency from 'components/Currency';
 
-import {fakeProductList} from './constants';
+import { fakeProductList } from './constants';
 
 const indented = {
   marginLeft: '20px',
@@ -81,7 +82,23 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Product List component:</h4>
-      <ProductList products={fakeProductList}/>
+      <ProductList products={fakeProductList} />
+    </div>
+    <div>
+      <h4>Currency component:</h4>
+      <Currency value={1000} type="USD" />
+    </div>
+    <div>
+      <h4>Currency component:</h4>
+      <Currency value={-1.23} type="USD" />
+    </div>
+    <div>
+      <h4>Currency component:</h4>
+      <Currency value=".59" type="USD" />
+    </div>
+    <div>
+      <h4>Currency component:</h4>
+      <Currency value="1" type="USD" />
     </div>
   </div>
 );

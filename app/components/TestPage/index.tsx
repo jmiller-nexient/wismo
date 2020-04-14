@@ -86,19 +86,19 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value={1000} type="USD" />
+      <Currency value={1000} />
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value={-1.23} type="USD" />
+      <Currency value={-1.23} />
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value=".59" type="USD" />
+      <Currency value=".59" />
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value="1" type="USD" />
+      <Currency value="1" />
     </div>
   </div>
 );

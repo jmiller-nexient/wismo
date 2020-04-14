@@ -2,17 +2,15 @@ import * as React from 'react';
 import { FormattedNumber } from 'react-intl';
 
 interface CurrencyProps {
-    value: (string | number);
-    type: (string | null);
+    type?: string;
+    value: (number | string);
 }
 
 const Currency: React.FC<CurrencyProps> = (props: CurrencyProps) => {
     const {
+        type = 'USD',
         value,
-        type,
     } = props;
-
-    const currency = type ? type : 'USD';
 
     const isValueNaN = value && isNaN(+value);
 
@@ -25,7 +23,7 @@ const Currency: React.FC<CurrencyProps> = (props: CurrencyProps) => {
     if (amount) {
         return (
             <FormattedNumber
-                currency={currency}
+                currency={type}
                 style={'currency'}
                 value={+amount}
             />
@@ -34,7 +32,7 @@ const Currency: React.FC<CurrencyProps> = (props: CurrencyProps) => {
 
     return (
         <div>
-            Empty Field
+            $0.00
         </div>
     );
 };

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductList /> should render correctly 1`] = `
+<span>
+  <span>
+    Rubber Ducky
+  </span>
+  <span>
+    , Sgt. Peppers Lonely Hearts Club Band
+  </span>
+  <span>
+    , Bag of Bricks
+  </span>
+</span>
+`;
+
+exports[`<ProductList /> should render correctly with an empty product list 1`] = `null`;

@@ -5,7 +5,10 @@ import Button from 'components/Button';
 import CustomerName from 'components/CustomerName';
 import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
+import ProductList from 'components/ProductList';
 import SelectLanguage from 'components/SelectLanguage';
+
+import {fakeProductList} from './constants';
 
 const indented = {
   marginLeft: '20px',
@@ -60,6 +63,10 @@ const TestPage: React.FC = (): React.ReactElement => (
         <br />
         10-Digits: <PhoneNumber value="1234567890" />
       </div>
+    </div>
+    <div>
+      <h4>Product List component:</h4>
+      <ProductList products={fakeProductList}/>
     </div>
   </div>
 );

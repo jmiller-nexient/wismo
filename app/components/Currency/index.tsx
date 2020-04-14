@@ -12,28 +12,14 @@ const Currency: React.FC<CurrencyProps> = (props: CurrencyProps) => {
         value,
     } = props;
 
-    const isValueNaN = value && isNaN(+value);
-
-    const amount = value === ''
-        ? '0'
-        : isValueNaN
-            ? null
-            : value;
-
-    if (amount) {
-        return (
-            <FormattedNumber
-                currency={type}
-                style={'currency'}
-                value={+amount}
-            />
-        );
-    }
+    const amount = (value && !isNaN(+value)) ? value : '0';
 
     return (
-        <div>
-            $0.00
-        </div>
+        <FormattedNumber
+            currency={type}
+            style={'currency'}
+            value={+amount}
+        />
     );
 };
 

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Currency /> should render correctly when currency has value of number -1.23 1`] = `"-$1.23"`;
+
+exports[`<Currency /> should render correctly when currency has value of number 1000 1`] = `"$1,000.00"`;
+
+exports[`<Currency /> should render correctly when currency has value of string ".59" 1`] = `"$0.59"`;
+
+exports[`<Currency /> should render correctly when currency has value of string "1" 1`] = `"$1.00"`;

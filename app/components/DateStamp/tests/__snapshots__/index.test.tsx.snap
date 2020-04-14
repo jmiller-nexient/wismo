@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateStamp Component should render long datestamp when given ISO formatted date prop 1`] = `"Thursday, March 19"`;
+
+exports[`DateStamp Component should render long datestamp when short prop is false 1`] = `"Friday, April 10"`;
+
+exports[`DateStamp Component should render long datestamp when short prop is not given 1`] = `"Friday, April 10"`;
+
+exports[`DateStamp Component should render nothing when given invalid date prop 1`] = `null`;
+
+exports[`DateStamp Component should render short datestamp when short prop is true 1`] = `"04/10/2020"`;
+
+exports[`DateStamp Component should render short datestamp when short prop is true and given ISO formatted date prop 1`] = `"03/19/2020"`;

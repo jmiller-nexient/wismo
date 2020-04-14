@@ -3,6 +3,7 @@ import * as React from 'react';
 import AccountNumber from 'components/AccountNumber';
 import Button from 'components/Button';
 import CustomerName from 'components/CustomerName';
+import DateStamp from 'components/DateStamp';
 import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ProductList from 'components/ProductList';
@@ -62,6 +63,20 @@ const TestPage: React.FC = (): React.ReactElement => (
         7-Digits: <PhoneNumber value="1234567" />
         <br />
         10-Digits: <PhoneNumber value="1234567890" />
+      </div>
+    </div>
+    <div>
+      <h4>Date Stamp component:</h4>
+      <div style={indented}>
+        Long/Default: <DateStamp date="2020/04/13" />
+        <br />
+        Short: <DateStamp date="2020/04/13" short={true} />
+        <br />
+        ISO Date Long: <DateStamp date="2020-03-19T13:15:30Z" />
+        <br />
+        ISO Date Short: <DateStamp date="2020-03-19T13:15:30Z" short={true} />
+        <br />
+        Invalid Date: <DateStamp date="Tuesday" />
       </div>
     </div>
     <div>

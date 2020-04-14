@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router';
 import { mount } from 'enzyme';
 import { translationMessages } from 'i18n';
 
-import Home from 'components/Layout';
+import Home from 'components/Home';
 import NotFoundPage from 'components/NotFoundPage';
 import Routes from '..';
 

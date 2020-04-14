@@ -4,16 +4,19 @@ import { IntlProvider } from 'react-intl';
 // Import i18n messages
 import { translationMessages } from '../../i18n';
 
-import { DEFAULT_LOCALE } from '../../locales';
+import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from '../../locales';
 
 interface ILanguageProviderProps {
   children?: React.ReactNode;
   locale?: string;
 }
 
+type SupportedLocalesType = typeof SUPPORTED_LOCALES;
+
 interface ILanguageState {
   changeLanguage: (language: string) => void;
   language: string;
+  supportedLanguages: SupportedLocalesType;
 }
 
 const LanguageContext = React.createContext<ILanguageState | null>(null);
@@ -34,6 +37,7 @@ const LanguageProvider: React.FC<ILanguageProviderProps> = (props: ILanguageProv
       value={{
         changeLanguage: setLanguage,
         language,
+        supportedLanguages: SUPPORTED_LOCALES,
       }}
     >
       <IntlProvider key={locale} locale={locale} messages={messages}>

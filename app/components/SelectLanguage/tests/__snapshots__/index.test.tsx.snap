@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectLanguage /> should render correctly when wrapped in LanguageProvider 1`] = `
+<select
+  onChange={[Function]}
+  value="en"
+>
+  <option
+    value="en"
+  >
+    English
+  </option>
+  <option
+    value="es"
+  >
+    Spanish
+  </option>
+</select>
+`;

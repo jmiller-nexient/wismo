@@ -9,14 +9,22 @@ const SelectLanguage: React.FC = (): React.ReactElement => {
     throw new Error('useContext can only be used inside LanguageProvider');
   }
 
-  const { changeLanguage, language } = context;
+  const { changeLanguage, language, supportedLanguages } = context;
+
+  const renderOptions = (): React.ReactElement[] =>
+    Object.keys(supportedLanguages).map(
+      (key: string): React.ReactElement => (
+        <option key={key} value={key}>
+          {supportedLanguages[key]}
+        </option>
+      ),
+    );
 
   const selectionChanged = (event: ChangeEvent<HTMLSelectElement>): void => changeLanguage(event.target.value);
 
   return (
     <select onChange={selectionChanged} value={language}>
-      <option value="en">English</option>
-      <option value="es">Spanish</option>
+      {renderOptions()}
     </select>
   );
 };

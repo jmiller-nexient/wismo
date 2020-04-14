@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import AccountNumber from 'components/AccountNumber';
 import Button from 'components/Button';
+import Currency from 'components/Currency';
 import CustomerName from 'components/CustomerName';
 import DateStamp from 'components/DateStamp';
 import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ProductList from 'components/ProductList';
 import SelectLanguage from 'components/SelectLanguage';
-import Currency from 'components/Currency';
 
 import { fakeProductList } from './constants';
 

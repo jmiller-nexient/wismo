@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer, { ReactTestRendererJSON } from 'react-test-renderer';
 
-import { IntlProvider } from 'react-intl';
 import { translationMessages } from 'i18n';
+import { IntlProvider } from 'react-intl';
 
 import Currency from '..';
 

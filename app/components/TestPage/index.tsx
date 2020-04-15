@@ -5,7 +5,6 @@ import Button from 'components/Button';
 import Currency from 'components/Currency';
 import CustomerName from 'components/CustomerName';
 import DateStamp from 'components/DateStamp';
-import Footer from 'components/Footer';
 import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ProductList from 'components/ProductList';
@@ -101,7 +100,6 @@ const TestPage: React.FC = (): React.ReactElement => (
       <h4>Currency component:</h4>
       <Currency value="1" />
     </div>
-    <Footer />
   </div>
 );
 

@@ -16,6 +16,7 @@ const isLocalUrl = (href: string): boolean => {
 };
 
 const Hyperlink: React.FC<IHyperlinkProps> = (props: IHyperlinkProps): React.ReactElement => {
+  console.log('props from HyperLink', props);
   const { alt, children, href, target } = props;
 
   const isLocal = isLocalUrl(href);

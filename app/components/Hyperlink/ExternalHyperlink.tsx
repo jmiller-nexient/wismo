@@ -5,6 +5,7 @@ import React from 'react';
 import { IHyperlinkProps } from './types';
 
 const ExternalHyperlink: React.FC<IHyperlinkProps> = (props: IHyperlinkProps): React.ReactElement => {
+  console.log('props from ExternalHyperlink', props);
   const { alt, children, href, target } = props;
 
   return (

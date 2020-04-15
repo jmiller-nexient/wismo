@@ -6,6 +6,7 @@ import Currency from 'components/Currency';
 import CustomerName from 'components/CustomerName';
 import DateStamp from 'components/DateStamp';
 import Hyperlink from 'components/Hyperlink';
+import OrderNumber from 'components/OrderNumber';
 import PhoneNumber from 'components/PhoneNumber';
 import ProductList from 'components/ProductList';
 import SelectLanguage from 'components/SelectLanguage';
@@ -26,6 +27,12 @@ const TestPage: React.FC = (): React.ReactElement => (
       <h4>Account Number component:</h4>
       <div style={indented}>
         <AccountNumber value="927530986753" />
+      </div>
+    </div>
+    <div>
+      <h4>Order Number component:</h4>
+      <div>
+        <OrderNumber value="123456789012" />
       </div>
     </div>
     <div>
@@ -71,11 +78,11 @@ const TestPage: React.FC = (): React.ReactElement => (
       <div style={indented}>
         Long/Default: <DateStamp date="2020/04/13" />
         <br />
-        Short: <DateStamp date="2020/04/13" short={true} />
+        Short: <DateStamp date="2020/04/13" short />
         <br />
         ISO Date Long: <DateStamp date="2020-03-19T13:15:30Z" />
         <br />
-        ISO Date Short: <DateStamp date="2020-03-19T13:15:30Z" short={true} />
+        ISO Date Short: <DateStamp date="2020-03-19T13:15:30Z" short />
         <br />
         Invalid Date: <DateStamp date="Tuesday" />
       </div>

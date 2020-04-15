@@ -1,8 +1,8 @@
+import {mount, shallow} from 'enzyme';
 import React, { ReactElement, useContext } from 'react';
 import renderer from 'react-test-renderer';
-import {shallow, mount} from 'enzyme';
 
-import { LanguageProvider, LanguageContext } from 'components/LanguageProvider';
+import { LanguageContext, LanguageProvider } from 'components/LanguageProvider';
 
 import SelectLanguage from '..';
 

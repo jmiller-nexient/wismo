@@ -1,0 +1,29 @@
+@import '../../styles/themes/index.less';
+
+@testpage-prefix-cls: ~'@{dte-prefix}-testpage';
+
+.@{testpage-prefix-cls} {
+  .customer-name {
+    margin-bottom: 0;
+  }
+  .edit-button {
+    background-color: @dte-white;
+    border: none;
+    color: @dte-blue-light;
+    font-size: @dte-wismo-font-size-0;
+    margin-left: 10px;
+    outline: none;
+    padding: 0;
+    text-decoration: underline;
+    &:hover:enabled {
+      background-color: @dte-white;
+    }
+  }
+  .indented {
+    margin-left: 20px;
+  }
+  .phone-number {
+    color: @dte-gray-600;
+    margin-top: 8px;
+  }
+}

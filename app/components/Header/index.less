@@ -1,0 +1,45 @@
+@import '../../styles/themes/index.less';
+
+@desktop: "only screen and (min-width: 401px)";
+@mobile: "only screen and (max-width: 400px";
+
+.dte-wismo-header-background {
+    background-color: @dte-background-brand-blue;
+    color: @dte-content-primary-inverse;
+    height: 96px;
+    top: 0px;
+    width: 100%;
+}
+
+.dte-wismo-header-link {
+    font-size: @dte-wismo-font-size-0;
+    height: 22px;
+    right: 36px;
+    text-align: right;
+    top: calc(50% - 22px / 2);
+}
+
+.dte-wismo-header-logo {
+    height: 32px;
+    left: calc(50% - 93px / 2) + 0.5px;
+    top: calc(50% - 32px / 2);
+    width: 93px;
+}
+
+.dte-wismo-header-page-title {
+    height: 30px;
+    left: 40px;
+    top: calc(50% - 30px / 2);
+}
+
+@media @desktop {
+    .dte-wismo-header-mobile {
+        display: none;
+    }
+}
+
+@media @mobile {
+    .dte-wismo-header-desktop {
+        display: none;
+    }
+}

@@ -1,8 +1,8 @@
+import {shallow} from 'enzyme';
 import React, { ReactElement } from 'react';
 import renderer from 'react-test-renderer';
 
 import OrderNumber from '..';
-import {shallow} from 'enzyme';
 
 describe('<OrderNumber />', () => {
   it('should render correctly when given a valid value', () => {

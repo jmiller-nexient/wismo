@@ -2,6 +2,7 @@ import React from 'react';
 
 import CustomerName from 'components/CustomerName';
 import Footer from 'components/Footer';
+import Header from 'components/Header';
 import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ServiceRequestBanner from 'components/ServiceRequestBanner';
@@ -15,7 +16,7 @@ import './index.less';
 
 const OrderStatusPage: React.FC = (): React.ReactElement => (
   <>
-    <header className="page-header">&lt;PageHeader /&gt; goes here</header>
+    <Header />
     <div className="dte-wismo-order-status-page">
       <ServiceRequestViewHeader serviceRequestNumber="867530986753" />
       <ServiceRequestBanner serviceDate="2020-04-22" />

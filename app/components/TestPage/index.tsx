@@ -5,6 +5,7 @@ import Button from 'components/Button';
 import Currency from 'components/Currency';
 import CustomerName from 'components/CustomerName';
 import DateStamp from 'components/DateStamp';
+import Header from 'components/Header';
 import Hyperlink from 'components/Hyperlink';
 import OrderNumber from 'components/OrderNumber';
 import PhoneNumber from 'components/PhoneNumber';
@@ -17,6 +18,7 @@ import './index.less';
 
 const TestPage: React.FC = (): React.ReactElement => (
   <div className="dte-wismo-testpage">
+    <Header />
     <h1>This is the test\demo page for custom components</h1>
     <div>
       <SelectLanguage />

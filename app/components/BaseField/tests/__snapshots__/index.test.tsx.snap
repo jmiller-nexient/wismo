@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseField /> should render correctly 1`] = `
+<div
+  className="dte-wismo-base-field-section"
+>
+  <label
+    className="dte-wismo-base-field-label"
+  >
+    This is just a filler message
+  </label>
+  <div>
+    <span
+      className="dte-wismo-base-field-children"
+    >
+      <span>
+        (123) 456-7890
+      </span>
+    </span>
+  </div>
+</div>
+`;

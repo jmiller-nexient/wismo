@@ -14,22 +14,21 @@ import SelectLanguage from 'components/SelectLanguage';
 
 import { fakeProductList } from './constants';
 
-const indented = {
-  marginLeft: '20px',
-};
+import './index.less';
 
 const TestPage: React.FC = (): React.ReactElement => (
   <div>
     <div>
       <Header />
     </div>
+  <div className="dte-wismo-testpage">
     <h1>This is the test\demo page for custom components</h1>
     <div>
       <SelectLanguage />
     </div>
     <div>
       <h4>Account Number component:</h4>
-      <div style={indented}>
+      <div className="indented">
         <AccountNumber value="927530986753" />
       </div>
     </div>
@@ -41,7 +40,7 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Button component:</h4>
-      <div style={indented}>
+      <div className="indented">
         <Button type="primary">Primary</Button>
         &nbsp;
         <Button disabled type="primary">
@@ -57,13 +56,13 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Customer Name component:</h4>
-      <div style={indented}>
+      <div className="indented">
         <CustomerName firstName="Adam" lastName="Naglich" />
       </div>
     </div>
     <div>
       <h4>Hyperlink component:</h4>
-      <div style={indented}>
+      <div className="indented">
         Internal URL: <Hyperlink href="/">Home</Hyperlink>
         <br />
         External URL: <Hyperlink href="http://www.dteenergy.com">DTE Energy</Hyperlink>
@@ -71,7 +70,7 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Phone Number component:</h4>
-      <div style={indented}>
+      <div className="indented">
         7-Digits: <PhoneNumber value="1234567" />
         <br />
         10-Digits: <PhoneNumber value="1234567890" />
@@ -79,7 +78,7 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Date Stamp component:</h4>
-      <div style={indented}>
+      <div className="indented">
         Long/Default: <DateStamp date="2020/04/13" />
         <br />
         Short: <DateStamp date="2020/04/13" short />
@@ -93,24 +92,47 @@ const TestPage: React.FC = (): React.ReactElement => (
     </div>
     <div>
       <h4>Product List component:</h4>
-      <ProductList products={fakeProductList} />
+      <div className="indented">
+        <ProductList products={fakeProductList} />
+      </div>
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value={1000} />
+      <div className="indented">
+        <Currency value={1000} />
+      </div>
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value={-1.23} />
+      <div className="indented">
+        <Currency value={-1.23} />
+      </div>
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value=".59" />
+      <div className="indented">
+        <Currency value=".59" />
+      </div>
     </div>
     <div>
       <h4>Currency component:</h4>
-      <Currency value="1" />
+      <div className="indented">
+        <Currency value="1" />
+      </div>
     </div>
+    <div>
+      <h4>Customer Info:</h4>
+      <h4 className="customer-name indented">
+        <CustomerName firstName="Adam" lastName="Naglich" />
+      </h4>
+      <p className="indented phone-number">
+        <PhoneNumber value="1234567890" />
+        <button className="edit-button" type="button">
+          Edit number
+        </button>
+      </p>
+    </div>
+  </div>
   </div>
 );
 

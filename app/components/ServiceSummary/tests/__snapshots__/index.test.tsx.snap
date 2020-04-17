@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ServiceSummary /> should render correctly when product list is empty 1`] = `
+<div
+  className="dte-wismo-service-summary"
+>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Address
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      >
+        <address
+          className="dte-wismo-address"
+        >
+          123 Main
+          <br />
+          Bloomfield, MI 48301
+        </address>
+      </span>
+    </div>
+  </div>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Account Number
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      >
+        <span>
+          1111 222 3333 4
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Products
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ServiceSummary /> should render correctly when the page loads 1`] = `
+<div
+  className="dte-wismo-service-summary"
+>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Address
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      >
+        <address
+          className="dte-wismo-address"
+        >
+          123 Main
+          <br />
+          Bloomfield, MI 48301
+        </address>
+      </span>
+    </div>
+  </div>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Account Number
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      >
+        <span>
+          1111 222 3333 4
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="dte-wismo-base-field-section"
+  >
+    <label
+      className="dte-wismo-base-field-label"
+    >
+      Products
+    </label>
+    <div>
+      <span
+        className="dte-wismo-base-field-children"
+      >
+        Residential Gas Heating
+        , 
+        Residential Electric Service
+        , 
+        Interuptable Air Conditioning
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,11 +1,13 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import renderer from 'react-test-renderer';
+
+import TestRendererJsonType from 'types/TestRendererJsonType';
 
 import CustomerName from '..';
 
 describe('<AccountNumber />', () => {
   it('should render correctly', () => {
-    const tree: ReactElement = renderer.create(
+    const tree: TestRendererJsonType = renderer.create(
       <CustomerName firstName="Test" lastName="Test" />,
     ).toJSON();
 

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccountNumberField /> should render correctly when a valid account number is passed in 1`] = `
+<div
+  className="dte-wismo-base-field-section"
+>
+  <label
+    className="dte-wismo-base-field-label"
+  >
+    Account Number
+  </label>
+  <div>
+    <span
+      className="dte-wismo-base-field-children"
+    >
+      <span>
+        1112 334 5556 7
+      </span>
+    </span>
+  </div>
+</div>
+`;

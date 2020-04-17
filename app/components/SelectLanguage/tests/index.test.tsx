@@ -1,8 +1,11 @@
+import React, { useContext } from 'react';
+
 import {mount, shallow} from 'enzyme';
-import React, { ReactElement, useContext } from 'react';
+
 import renderer from 'react-test-renderer';
 
 import { LanguageContext, LanguageProvider } from 'components/LanguageProvider';
+import TestRendererJsonType from 'types/TestRendererJsonType';
 
 import SelectLanguage from '..';
 
@@ -37,7 +40,7 @@ describe('<SelectLanguage />', () => {
   });
 
   it('should render correctly when wrapped in LanguageProvider', () => {
-    const tree: ReactElement = renderer.create(
+    const tree: TestRendererJsonType = renderer.create(
       <LanguageProvider>
         <SelectLanguage />
       </LanguageProvider>

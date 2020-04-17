@@ -1,4 +1,10 @@
 {
   "wismo.components.home.title": "¡Hola WISMO!",
-  "wismo.components.not-found-page.message": "Página no encontrada"
+  "wismo.components.not-found-page.message": "Página no encontrada",
+  "wismo.components.account-number-field.accountNumberFieldLabel": "Número de cuenta",
+  "wismo.components.address-field.addressFieldLabel": "Dirección de Servicio",
+  "wismo.components.products-list-field.productsListFieldLabel": "Productos",
+  "wismo.components.product-list.IAC": "Aire Acondicionado Interuptable",
+  "wismo.components.product-list.RES_ELECTRIC": "Servicio Eléctrico Residencial",
+  "wismo.components.product-list.RES_GAS": "Calefacción de gas residencial"
 }

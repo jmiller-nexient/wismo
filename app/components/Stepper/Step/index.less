@@ -1,0 +1,141 @@
+@import '../../../styles/themes/index.less';
+
+@step-prefix-cls: ~'@{dte-prefix}-step';
+
+.@{step-prefix-cls} {
+  display: flex;
+  position: relative;
+  &:last-child {
+    .tail {
+      height: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    .completed {
+      .tail {
+        .half-2 {
+          background: @dte-gray-300;
+        }
+      }
+    }
+  }
+
+  a {
+    padding-left: 15px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .content {
+    min-height: 100px;
+  }
+
+  .active {
+    color: @dte-gray-700;
+  }
+
+  .completed {
+    .tail {
+      .half-1,
+      .half-2 {
+        background: @dte-blue;
+      }
+      .half-1 {
+        height: 30%;
+      }
+      .half-2 {
+        height: 50%;
+      }
+    }
+    color: @dte-gray-700;
+  }
+
+  .error {
+    .tail {
+      .half-1 {
+        height: 45%;
+        background: @dte-red;
+      }
+    }
+    color: @dte-red;
+  }
+
+  .pending {
+    .tail {
+      .half-1,
+      .half-2 {
+        height: 40%;
+        background: @dte-gray-300;
+      }
+    }
+    color: @dte-gray-600;
+  }
+
+  .icon-wrapper {
+    padding: 0 40px 10px 10px;
+
+    .active {
+      background: @dte-white;
+      color: @dte-white;
+      border: 2px solid @dte-blue;
+    }
+    .completed {
+      background: @dte-blue;
+      color: @dte-white;
+      border: 2px solid @dte-blue;
+    }
+    .error {
+      background: @dte-white;
+      color: @dte-red;
+      border: 2px solid @dte-red;
+    }
+    .pending {
+      background: @dte-white;
+      color: @dte-white;
+      border: 2px solid @dte-gray-300;
+    }
+  }
+
+  .icon {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .tail {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 24px;
+    padding: 32px 0 6px;
+    width: 2px;
+    height: 100%;
+    // &::after {
+    //   display: inline-block;
+    //   width: 2px;
+    //   height: 100%;
+    //   background: @dte-gray-300;
+    //   border-radius: 1px;
+    //   content: '';
+    // }
+  }
+
+  .title {
+    font-size: @dte-wismo-font-size-3;
+    line-height: 2.027rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.424rem;
+    padding: 10px 0;
+  }
+}

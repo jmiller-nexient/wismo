@@ -7,6 +7,7 @@ import PhoneNumber from 'components/PhoneNumber';
 import ServiceRequestBanner from 'components/ServiceRequestBanner';
 import ServiceRequestViewHeader from 'components/ServiceRequestViewHeader';
 import ServiceSummary from 'components/ServiceSummary';
+import Stepper from 'components/Stepper';
 
 import { fakeServiceRequest } from 'components/TestPage/constants';
 
@@ -18,8 +19,10 @@ const OrderStatusPage: React.FC = (): React.ReactElement => (
     <div className="dte-wismo-order-status-page">
       <ServiceRequestViewHeader serviceRequestNumber="867530986753" />
       <ServiceRequestBanner serviceDate="2020-04-22" />
-      <div className="stepper-title">Start Service Request</div>
-      <div className="stepper">Stepper goes here</div>
+      <div className="stepper-title">Stop Service Request</div>
+      <div className="stepper">
+        <Stepper />
+      </div>
       <div className="customer-name">
         <CustomerName firstName="Adam" lastName="Naglich" />
       </div>
@@ -30,7 +33,7 @@ const OrderStatusPage: React.FC = (): React.ReactElement => (
         <Hyperlink href="/orders/678">Edit Number</Hyperlink>
       </div>
       <div className="service-summary">
-        <ServiceSummary serviceRequest={fakeServiceRequest}/>
+        <ServiceSummary serviceRequest={fakeServiceRequest} />
       </div>
     </div>
     <Footer />

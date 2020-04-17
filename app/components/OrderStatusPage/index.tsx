@@ -6,6 +6,9 @@ import Hyperlink from 'components/Hyperlink';
 import PhoneNumber from 'components/PhoneNumber';
 import ServiceRequestBanner from 'components/ServiceRequestBanner';
 import ServiceRequestViewHeader from 'components/ServiceRequestViewHeader';
+import ServiceSummary from 'components/ServiceSummary';
+
+import { fakeServiceRequest } from 'components/TestPage/constants';
 
 import './index.less';
 
@@ -26,7 +29,9 @@ const OrderStatusPage: React.FC = (): React.ReactElement => (
         </span>
         <Hyperlink href="/orders/678">Edit Number</Hyperlink>
       </div>
-      <div className="service-summary">&lt;ServiceSummary /&gt; goes here</div>
+      <div className="service-summary">
+        <ServiceSummary serviceRequest={fakeServiceRequest}/>
+      </div>
     </div>
     <Footer />
   </>

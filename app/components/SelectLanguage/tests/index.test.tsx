@@ -1,5 +1,7 @@
-import {mount, shallow} from 'enzyme';
 import React, { useContext } from 'react';
+
+import {mount, shallow} from 'enzyme';
+
 import renderer from 'react-test-renderer';
 
 import { LanguageContext, LanguageProvider } from 'components/LanguageProvider';

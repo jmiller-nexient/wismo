@@ -11,7 +11,9 @@ const OrderNumber: React.FC<IOrderNumberProps> = (props: IOrderNumberProps): Rea
     return `${input.substr(0,4)} ${input.substr(4,4)} ${input.substr(8,3)} ${input.substr(11,1)}`;
   };
 
-  if (value.match(new RegExp('([0-9]{12})\d', 'g'))) {
+  const regex = new RegExp('^[0-9]{12}$', 'g');
+
+  if (!regex.test(value)) {
     throw new Error('order numbers must be exactly 12 digits.');
   }
 

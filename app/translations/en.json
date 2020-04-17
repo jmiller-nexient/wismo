@@ -1,4 +1,10 @@
 {
   "wismo.components.home.title": "Hello, WISMO!",
-  "wismo.components.not-found-page.message": "Page not found."
+  "wismo.components.not-found-page.message": "Page not found.",
+  "wismo.components.account-number-field.accountNumberFieldLabel": "Account Number",
+  "wismo.components.address-field.addressFieldLabel": "Address",
+  "wismo.components.products-list-field.productsListFieldLabel": "Products",
+  "wismo.components.product-list.IAC": "Interuptable Air Conditioning",
+  "wismo.components.product-list.RES_ELECTRIC": "Residential Electric Service",
+  "wismo.components.product-list.RES_GAS": "Residential Gas Heating"
 }

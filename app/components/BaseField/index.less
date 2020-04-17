@@ -1,0 +1,24 @@
+@import '../../styles/themes/index.less';
+
+@base-field-prefix-cls: ~'@{dte-prefix}-base-field';
+
+.@{base-field-prefix-cls} {
+  &-section {
+    display: inline-block;
+    margin: 15px;
+    width: 50%;
+
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+  }
+
+  &-label {
+    font-size: @dte-wismo-font-size-2;
+    font-weight: @dte-wismo-font-weight-semi-bold;
+  }
+
+  &-children {
+    color: @dte-gray-500;
+  }
+}

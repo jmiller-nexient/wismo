@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddressField /> should render correctly when a valid address is passed in 1`] = `
+<div
+  className="dte-wismo-base-field-section"
+>
+  <label
+    className="dte-wismo-base-field-label"
+  >
+    Address
+  </label>
+  <div>
+    <span
+      className="dte-wismo-base-field-children"
+    >
+      <address
+        className="dte-wismo-address"
+      >
+        1234 That Street
+        <br />
+        Anytown, MI 12345
+      </address>
+    </span>
+  </div>
+</div>
+`;

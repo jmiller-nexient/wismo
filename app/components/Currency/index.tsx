@@ -6,7 +6,7 @@ interface CurrencyProps {
     value: (number | string);
 }
 
-const Currency: React.FC<CurrencyProps> = (props: CurrencyProps) => {
+const Currency: React.FC<CurrencyProps> = (props: CurrencyProps): React.ReactElement => {
     const {
         type = 'USD',
         value,

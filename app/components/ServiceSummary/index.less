@@ -1,0 +1,17 @@
+@import '../../styles/themes/index.less';
+
+@service-summary-prefix-cls: ~'@{dte-prefix}-service-summary';
+
+.@{service-summary-prefix-cls} {
+  border: 1px solid @dte-gray-400;
+  column-count: 2;
+  margin: 5px;
+  -moz-column-count: 2;
+  padding: 10px;
+  -webkit-column-count: 2;
+  @media screen and (max-width: 400px) {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+  }
+}

@@ -4,26 +4,23 @@
 
 .@{service-request-view-header-prefix-cls} {
   border-bottom: 1px solid @dte-gray-300;
-  display: flex;
-  height: 53px;
-  margin-top: 28px;
-  width: 100%;
+  column-count: 2;
+  padding-bottom: 25px;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
 
-  .column {
-    flex: 50%;
-
-    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-    }
+  @media screen and (max-width: 850px) {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
   }
 
   .service-request-number {
-    margin-right: 6px;
     text-align: right;
 
     .label {
       font-size: @dte-wismo-font-size-1;
+      padding-right: 6px;
     }
   }
 }

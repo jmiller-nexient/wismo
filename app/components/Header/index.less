@@ -1,67 +1,86 @@
 @import '../../styles/themes/index.less';
 
-@desktop: ~"(min-width: 451px)";
-@mobile: ~"(max-width: 450px)";
+@desktop: ~'(min-width: 451px)';
+@mobile: ~'(max-width: 450px)';
 
 .dte-wismo-header-background {
-    background-color: @dte-background-brand-blue;
-    color: @dte-content-primary-inverse;
-    height: 96px;
-    top: 0px;
-    width: 100%;
-    position: relative;
+  background-color: @dte-background-brand-blue;
+  color: @dte-content-primary-inverse;
+  height: 96px;
+  top: 0px;
+  width: 100%;
+  position: relative;
 }
 
 .dte-wismo-header-link {
-    font-size: @dte-wismo-font-size-0;
-    height: 22px;
-    right: 36px;
-    text-align: right;
-    margin-right: 50px;
+  font-size: @dte-wismo-font-size-0;
+  height: 22px;
+  right: 36px;
+  text-align: right;
+  margin-right: 50px;
+
+  > a {
+    color: white;
+
+    &:link {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+
+    &:visited {
+      color: white;
+    }
+
+    > img {
+      color: white !important;
+    }
+  }
 }
 
 .dte-wismo-header-logo {
-    height: 32px;
-    width: 93px;
+  height: 32px;
+  width: 93px;
 }
 
 .dte-wismo-header-page-title {
-    height: 30px;
-    left: 40px;
-    margin-left: 50px;
+  height: 30px;
+  left: 40px;
+  margin-left: 50px;
 }
 
 .dte-wismo-hamburger {
-    width: 100%;
-    float: left;
-    margin-left: 30px;
-    margin-top: 15px;
-
+  width: 100%;
+  float: left;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 @media @desktop {
-    .dte-wismo-header-desktop {
-        height: 96px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .dte-wismo-header-mobile {
-        display: none;
-    }
+  .dte-wismo-header-desktop {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dte-wismo-header-mobile {
+    display: none;
+  }
 }
 
 @media @mobile {
-    .dte-wismo-header-desktop {
-        display: none;
-    }
-    .dte-wismo-header-mobile {
-        height: 96px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .dte-wismo-header-page-title {
-        margin-left: 0px;
-    }
+  .dte-wismo-header-desktop {
+    display: none;
+  }
+  .dte-wismo-header-mobile {
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dte-wismo-header-page-title {
+    margin-left: 0px;
+  }
 }

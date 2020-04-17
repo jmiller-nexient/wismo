@@ -16,10 +16,10 @@ const ServiceRequestViewHeader: React.FC<IServiceRequestViewHeaderProps> = (
 
   return (
     <div className="dte-wismo-service-request-view-header">
-      <div className="column">
+      <div className="back-link">
         <Hyperlink href="/orders/123">&lt; Back to All Service Requests</Hyperlink>
       </div>
-      <div className="column service-request-number">
+      <div className="service-request-number">
         <span className="label">Service Request No.</span>
         <OrderNumber value={serviceRequestNumber} />
       </div>

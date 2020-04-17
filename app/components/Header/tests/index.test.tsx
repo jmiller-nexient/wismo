@@ -1,11 +1,13 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import renderer from 'react-test-renderer';
+
+import TestRendererJsonType from 'types/TestRendererJsonType';
 
 import Header from '..';
 
 describe('<Header />', () => {
   it('should render correctly', () => {
-    const tree: ReactElement = renderer.create(
+    const tree: TestRendererJsonType = renderer.create(
       <Header />,
     ).toJSON();
 

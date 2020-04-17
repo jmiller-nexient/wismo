@@ -17,11 +17,8 @@ import { fakeProductList } from './constants';
 import './index.less';
 
 const TestPage: React.FC = (): React.ReactElement => (
-  <div>
-    <div>
-      <Header />
-    </div>
   <div className="dte-wismo-testpage">
+    <Header />
     <h1>This is the test\demo page for custom components</h1>
     <div>
       <SelectLanguage />
@@ -132,7 +129,6 @@ const TestPage: React.FC = (): React.ReactElement => (
         </button>
       </p>
     </div>
-  </div>
   </div>
 );
 
